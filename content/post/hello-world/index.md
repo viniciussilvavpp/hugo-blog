@@ -5,9 +5,11 @@ slug: o-que-e-infinito
 date: 2022-07-18 10:40:00+0000
 image: cover.jpg
 categories:
-    - Reflexoes Curiosidades
+    - Reflexoes 
+    - Curiosidades
 tags:
-    - Reflexoes Curiosidades
+    - Reflexoes
+    - Curiosidades
 ---
 
 Esse questionamento pairou sobre minha cabeça durante alguns minutos enquanto estudava o conceito de valores infinitesimais de Cálculo 1. Quem já deu uma olhada, sabe do que estou falando, logo que para realizar os cálculos de limites é necessário conceber valores que tendem a outro. No entanto, o quão próximo um número pode ser de outro? Se pegar dois corpos na mais profunda camada da matéria, a distância entre eles for de 1 centímetro pode ser considerada infinita em relação ao tamanho dos corpos?
