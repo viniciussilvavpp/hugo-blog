@@ -1,6 +1,6 @@
 ---
 title: Introdução ao Cálculo
-description: Toda vez que ouvimos a palavra "Cálculo" temos a impressão de algo complexo e sem sentido. Mas, calma! Elas podem ser mais fáceis do que parece (ou não kk).
+description: Toda vez que ouvimos a palavra "Cálculo" temos a impressão de algo complexo e sem sentido. Mas, calma! Ele pode ser mais fácil do que parece (ou não kk).
 slug: introducao-ao-calculo
 date: 2022-07-26 16:02:00+0000
 image: cover.jpg
@@ -25,7 +25,7 @@ O problema da área pode ser representado pelo caso do valor correto da área de
 
 Esse processo está exemplificado pela seguinte imagem.
 
-![Método da exaustão](metodo-da-exaustao.jpg)
+![Método da exaustão](metodo-da-exaustao-teste.svg)
 
 Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!
 
