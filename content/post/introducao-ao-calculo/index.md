@@ -17,8 +17,8 @@ Em primeiro lugar, é preciso entender do que se trata o estudo de Cálculo e no
 
 Agora que já foi apresentado o conceito inicial de funções matemáticas, vamos olhar mais produndamente os dois problemas fundamentais que deram origem ao estudo do cálculo. Eles são conhecidos como o "Problema da área" e o "Problema da tangente", onde ambos precisam lidar com o conceito de limite para se obter valores precisos de determinada função.
 
-O problema da área pode ser representado pelo caso do valor correto da área de um círculo, considerando que ele não possui lados contáveis que possibilite realizar o cálculo direto. Então, na Grécia antiga, foi desenvolvido uma maneira de calcular de forma aproximada a área do círculo com o "método da exaustão", o qual é utilizado para encontrar a área de qualquer polígono dividindo-o em triângulos e somar as áreas obtidas dos triângulos que formam determinada figura geométrica com certa quantidade de lados. Considerando *A<sub>n</sub>* a área do polígono com *n* lados, então podemos assumir que a área do círculo pode ser interpretado como: ![Área do Circulo](limite-de-A.svg)
-
+O problema da área pode ser representado pelo caso do valor correto da área de um círculo, considerando que ele não possui lados contáveis que possibilite realizar o cálculo direto. Então, na Grécia antiga, foi desenvolvido uma maneira de calcular de forma aproximada a área do círculo com o "método da exaustão", o qual é utilizado para encontrar a área de qualquer polígono dividindo-o em triângulos e somar as áreas obtidas dos triângulos que formam determinada figura geométrica com certa quantidade de lados. Considerando *A<sub>n</sub>* a área do polígono com *n* lados, então podemos assumir que a área do círculo pode ser interpretado como: 
+![area do poligono quando os lados tende a infinito](limite-de-A.jpg)
 Esse processo está exemplificado pela seguinte imagem.
 
 ![Método da exaustão](metodo-da-exaustao-teste.svg)
