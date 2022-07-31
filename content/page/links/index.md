@@ -11,7 +11,7 @@ links:
     image: https://static-exp1.licdn.com/sc/h/5bukxbhy9xsil5mb7c2wulfbx
   - title: Pointer Pointer
     description: Só de zoas mesmo.
-    website: https://static-exp1.licdn.com/sc/h/5bukxbhy9xsil5mb7c2wulfbx
+    website: https://pointerpointer.com/
     image: 
 menu:
     main: 
