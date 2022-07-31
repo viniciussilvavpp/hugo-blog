@@ -68,5 +68,5 @@ Apesar de parecer que o problema da área e da tagente serem completamente difer
 Um pequena observação: todos os conteúdos teóricos apresentados serão aplicados de alguma forma e colocados em posts separados com a tag "aplicacao" para que os posts não fiquem muito extensos e facilite para eu continuar publicando com certa frequência. Obrigado pela atenção e até a próxima.
 
 > Materiais de base:
-> Cálculo - Volume 1, 8° edição - James Stewart
+> Cálculo - Volume 1, 8° edição - James Stewart;
 > O Cálculo com Geometria Analítica, Volume 1 - Louis Leithold.
