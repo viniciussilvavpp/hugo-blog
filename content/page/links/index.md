@@ -1,10 +1,18 @@
 ---
 title: Links
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: Twitter
+    description: Aquele lugar que entro só para ver o que está sendo comentado no mundo.
+    website: https://twitter.com/ViniciuSilvavpp
+    image: https://abs.twimg.com/responsive-web/client-web/icon-svg.168b89d8.svg
+  - title: TypeScript
+    description: Fique à vontade para me contrat... quis dizer contatar.
+    website: https://www.linkedin.com/in/vinicius-silva-809121246/
+    image: https://static-exp1.licdn.com/sc/h/5bukxbhy9xsil5mb7c2wulfbx
+  - title: TypeScript
+    description: Só de zoas mesmo.
+    website: https://static-exp1.licdn.com/sc/h/5bukxbhy9xsil5mb7c2wulfbx
+    image: 
 menu:
     main: 
         weight: 4
@@ -13,7 +21,7 @@ menu:
 
 comments: false
 ---
-
+<!-- 
 To use this feature, add `links` section to frontmatter.
 
 This page's frontmatter:
@@ -31,3 +39,4 @@ links:
 ```
 
 `image` field accepts both local and external images.
+-->
