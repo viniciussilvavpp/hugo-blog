@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vinicius Notes</title><link>https://viniciusnotes.vercel.app/</link><description>Recent content on Vinicius Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 31 Jul 2022 19:02:00 +0000</lastBuildDate><atom:link href="https://viniciusnotes.vercel.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Introdução ao Cálculo</title><link>https://viniciusnotes.vercel.app/p/introducao-ao-calculo/</link><pubDate>Sun, 31 Jul 2022 19:02:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/p/introducao-ao-calculo/</guid><description>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/calculus.jpg" alt="Featured image of post Introdução ao Cálculo" />&lt;h1 id="mas-por-que-estudar-cálculo">Mas por que estudar Cálculo?&lt;/h1>
+&lt;p>Em primeiro lugar, é preciso entender do que se trata o estudo de Cálculo e no que se baseia as exp ressões matemáticas que serão abordadas. O Cálculo é o ramo da matemática que lida com coisas mais dinâmicas, que apresentam comportamentos que podem ser bem representados por gráficos de linhas. Como exemplo podemos pegar o movimento de uma bola que é chutada pelo goleiro em direção ao meio do campo de futebol. O percurso da bola pode ser descrito por um gráfico que traça a distância inicial (antes do goleiro chutar) até a distância final (quando atinge o chão) em relação ao tempo que ela demorou para realizar o trajeto. Esse caso pode ser matematicamente descrito como uma &lt;strong>função&lt;/strong> que relaciona a distância (&lt;em>s&lt;/em>) da bola no momento (&lt;em>t&lt;/em>), sendo reescrita por &lt;em>s(t)&lt;/em>, onde cada instante &lt;em>t&lt;/em> estará associado a um valor &lt;em>s&lt;/em>.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/grafico-percurso-bola.jpg"
+width="480"
+height="310"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/grafico-percurso-bola_hud61babcbb6c01db032aeffd7cde68fb3_14775_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/introducao-ao-calculo/grafico-percurso-bola_hud61babcbb6c01db032aeffd7cde68fb3_14775_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Gráfico do percurso de uma bola"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="371px"
+>&lt;/p>
+&lt;p>Agora que já foi apresentado o conceito inicial de funções matemáticas, vamos olhar mais produndamente os dois problemas fundamentais que deram origem ao estudo do cálculo. Eles são conhecidos como o &amp;ldquo;Problema da área&amp;rdquo; e o &amp;ldquo;Problema da tangente&amp;rdquo;, onde ambos precisam lidar com o conceito de limite para se obter valores precisos de determinada função.&lt;/p>
+&lt;h2 id="o-problema-da-área">O Problema da Área&lt;/h2>
+&lt;p>O problema da área pode ser representado pelo caso do valor correto da área de um círculo, considerando que ele não possui lados contáveis que possibilite realizar o cálculo direto. Então, na Grécia antiga, foi desenvolvido uma maneira de calcular de forma aproximada a área do círculo com o &amp;ldquo;método da exaustão&amp;rdquo;, o qual é utilizado para encontrar a área de qualquer polígono dividindo-o em triângulos e somar as áreas obtidas dos triângulos que formam determinada figura geométrica com certa quantidade de lados. Considerando &lt;em>An&lt;/em> a área do polígono com &lt;em>n&lt;/em> lados, então podemos assumir que a área do círculo pode ser interpretado como:&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/limite-de-A.jpg"
+width="116"
+height="24"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/limite-de-A_hu74e6d59526f987ed2f81c7723d47f0e0_1752_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/introducao-ao-calculo/limite-de-A_hu74e6d59526f987ed2f81c7723d47f0e0_1752_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="483"
+data-flex-basis="1160px"
+>&lt;/p>
+&lt;p>onde a área do círculo é o limite da das áreas dos polígonos inscritos nele, em que os polígonos seguem a seguinte tendência quando aumentam a quantidade de lados:&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/arquimedes-metodo-exaustao.png"
+width="480"
+height="322"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/arquimedes-metodo-exaustao_hucb4c0fed892fd23569de742855493e12_48430_480x0_resize_box_3.png 480w, https://viniciusnotes.vercel.app/p/introducao-ao-calculo/arquimedes-metodo-exaustao_hucb4c0fed892fd23569de742855493e12_48430_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Método da exaustão empregada por Arquimedes"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="357px"
+>&lt;/p>
+&lt;p>Partindo dessa ideia, o cálculo possibilita encontrar a área de qualquer figura irregular ao aproximar a área total desconhecido com a soma da área de vária figuras de área conhecida, geralmente empregado na interpretação de gráficos.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/area-sob-a-curva.gif"
+width="200"
+height="140"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/area-sob-a-curva_hu020f8139ea350a4a4136c961f1a7a39e_2848_480x0_resize_box.gif 480w, https://viniciusnotes.vercel.app/p/introducao-ao-calculo/area-sob-a-curva_hu020f8139ea350a4a4136c961f1a7a39e_2848_1024x0_resize_box.gif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+>&lt;/p>
+&lt;p>O problema da área foi o que originou o ramo do cálculo conhecido como &lt;em>cálculo integral&lt;/em>. Através dele podemos cálcular volumes de sólidos, comprimento de um arco, massa e centro de gravidade de objetos e muito mais.&lt;/p>
+&lt;h2 id="o-problema-da-tangente">O Problema da Tangente&lt;/h2>
+&lt;p>A tangente pode ser definida como a reta que toca a curva em um ponto e segue a inclinação da curva naquele ponto. Ok, eu sei. Esse conceito parece um tanto quanto abstrato e sem utilidade, mas vamos com calma.&lt;/p>
+&lt;p>Vamos analisar a seguinte imagem, onde existe a curva &lt;em>y = f(x)&lt;/em> e um ponto P definido em &lt;em>x = 2&lt;/em>.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/reta-tangente.jpg"
+width="480"
+height="480"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/reta-tangente_hu1048be01a6835d4e4a36c69f6cd64608_24213_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/introducao-ao-calculo/reta-tangente_hu1048be01a6835d4e4a36c69f6cd64608_24213_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>&lt;/p>
+&lt;p>A imagem acima também mostra uma reta que intercepta o ponto P seguindo inclinação da curva onde P está situado. Essa reta é o que conhecemos como reta tangente.&lt;/p>
+&lt;p>Certo, agora podemos fazer à seguinte pergunta: &amp;ldquo;e agora? para que serve isso?&amp;rdquo;. O problema da tangente é sobre conseguir determinar a inclinação da reta tangente em determinado ponto, em que a inclinação dela é capaz de descrever a variação da função &lt;em>f(x)&lt;/em> em dado momento &lt;em>x&lt;/em>.&lt;/p>
+&lt;p>Enfim, chegamos a pergunta que realmente define o problema da tangente: como encontramos a inclinação da reta tangente que passa em certo ponto?&lt;/p>
+&lt;p>Para isso precisamos lembrar como encontrar a inclinação da reta que corta dois pontos, também conhecida como a &lt;em>reta secante&lt;/em>. Assim, encontrando a inclinação da reta entre dois pontos, podemos deixar o ponto P fixo e deslocar o outro em direção a P o mais próximo possível. Desse modo, a inclinação da reta entre esses dois pontos muito próximos é equivalente a inclinação da reta tangente no ponto P.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/secante-para-reta-tangente.jpg"
+width="480"
+height="936"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/secante-para-reta-tangente_hu3819552981f98c0d9c0127e23df38a9a_35374_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/introducao-ao-calculo/secante-para-reta-tangente_hu3819552981f98c0d9c0127e23df38a9a_35374_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="51"
+data-flex-basis="123px"
+>&lt;/p>
+&lt;p>No primeiro gráfico da figura acima estão os pontos P e Q ligados pela reta secante com inclinação &lt;em>m(pq)&lt;/em> que pode ser encontrado seu valor pela equação&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/equacao-secante.png"
+width="155"
+height="39"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/equacao-secante_huc469df3559a53e5d959e5bea5221e523_880_480x0_resize_box_3.png 480w, https://viniciusnotes.vercel.app/p/introducao-ao-calculo/equacao-secante_huc469df3559a53e5d959e5bea5221e523_880_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Equação da secante entre dois pontos"
+class="gallery-image"
+data-flex-grow="397"
+data-flex-basis="953px"
+>.&lt;/p>
+&lt;p>Com isso, quando tomamos a posição do ponto Q se aproximando do ponto P ao longo da curva, usamos o conceito de limite, definindo que a posição &lt;em>x&lt;/em> do ponto Q tende à posição &lt;em>a&lt;/em> do ponto P, conseguindo encontrar o valor da inclinação da tangente que passa no ponto desejado.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/equacao-tangente.png"
+width="164"
+height="39"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-calculo/equacao-tangente_huf975fb34e1bced7616ec15c1a0677238_969_480x0_resize_box_3.png 480w, https://viniciusnotes.vercel.app/p/introducao-ao-calculo/equacao-tangente_huf975fb34e1bced7616ec15c1a0677238_969_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="420"
+data-flex-basis="1009px"
+>.&lt;/p>
+&lt;p>O problema da tangente foi o que originou o campo de estudo do cálculo denominado de &lt;em>cálculo diferencial&lt;/em>, o qual foi inventado e definido de verdade mais de 2 mil anos depois do &lt;em>cálculo integral&lt;/em>. O que se sabe é que o matemático francês Pierre Fermat (1601-1665) foi quem criou o conceito e os principais responsáveis por desenvolverem as ideias de Fermat foram John Wallis (1616-1703), Isaac Barrow (1630-1677), Isaac Newton (1642-1727) e Gottfried Leibniz (1646-1716).&lt;/p>
+&lt;p>Apesar de parecer que o problema da área e da tagente serem completamente diferentes, em estudos futuros veremos que apresentam forte relação na resolução de diversos outros problemas.&lt;/p>
+&lt;p>Um pequena observação: todos os conteúdos teóricos apresentados serão aplicados de alguma forma e colocados em posts separados com a tag &amp;ldquo;aplicacao&amp;rdquo; para que os posts não fiquem muito extensos e facilite para eu continuar publicando com certa frequência. Obrigado pela atenção e até a próxima.&lt;/p>
+&lt;blockquote>
+&lt;p>Materiais de base:
+Cálculo - Volume 1, 8° edição - James Stewart;
+O Cálculo com Geometria Analítica, Volume 1 - Louis Leithold.&lt;/p>
+&lt;/blockquote></description></item><item><title>Arquivos</title><link>https://viniciusnotes.vercel.app/arquivos/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/arquivos/</guid><description/></item><item><title>Links</title><link>https://viniciusnotes.vercel.app/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/links/</guid><description>&lt;p>Aqui tem alguns links que podem ser úteis para saber melhor quem sou eu ou alguma coisa desse tipo.&lt;/p></description></item><item><title>Pesquisa</title><link>https://viniciusnotes.vercel.app/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/search/</guid><description/></item></channel></rss>
