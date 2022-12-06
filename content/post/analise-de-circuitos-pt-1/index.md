@@ -1,6 +1,6 @@
 ---
 title: Análise de Circuitos
-description: Toda vez que ouvimos a palavra "Cálculo" temos a impressão de algo complexo e sem sentido. Mas, calma! Ele pode ser mais fácil do que parece (espero que sim kk).
+description: Inicialmente, será abordado a composição de um circuito elétrico, considerando que é fundamental ter em mente as definições mais básicas sobre cada componente...
 slug: analise-de-circuitos-pt-1
 date: 2022-08-03 19:51:00+0000
 image: thumb-circuito.jpg
