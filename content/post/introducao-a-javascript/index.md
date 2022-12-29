@@ -1,9 +1,9 @@
 ---
-title: Introdução à JavaScript
+title: Introdução ao JavaScript
 description: Para início de conversa, você sabia que o nome oficial da linguagem de programação JavaScript na verdade é ECMAScript?
-slug: introducao-a-javascript
+slug: introducao-ao-javascript
 date: 2022-12-29 18:51:00+0000
-image: calculus.jpg
+image: jsjsjs.jpg
 categories:
     - Programação
 tags:
@@ -12,7 +12,7 @@ tags:
 ---
 
 
-# Introdução à JavaScript
+# Introdução ao JavaScript
 
 ## Um pouco de história
 
