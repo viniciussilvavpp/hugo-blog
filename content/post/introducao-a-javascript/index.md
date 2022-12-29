@@ -56,7 +56,7 @@ Agora você pode executar ele de duas formas:
   
 2. Criar um arquivo HTML e invocar o arquivo JavaScript para abrir no navegar.
   
-  Nessa opção é necessário criar o arquivo HTML (hello.html) e inserir a tag '\\<script></script>' com a localização do arquivo JS.
+  Nessa opção é necessário criar o arquivo HTML (hello.html) e inserir a tag de "script" com a localização do arquivo JS.
   
   `<script src="hello.js"></script>`
   
