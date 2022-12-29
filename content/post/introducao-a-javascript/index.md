@@ -46,23 +46,23 @@ Outro modo de usar o JavaScript é instalando o Node pelo site [https://nodejs.o
 
 Quando você quiser experimentar criar blocos maiores de códigos é melhor criar um arquivo próprio onde você pode navegar livremente por ele. Para indentificar os arquivos próprios de código JavaScript, usa-se a terminação ".js". Nesse exemplo iremos criar o "hello.js" e escrever o seguinte código.
 
-<code>console.log("Hello World!");</code>
+`console.log("Hello World!");`
 
 Agora você pode executar ele de duas formas:
 
 1. Indo no terminal e abrindo o arquivo usando a linha de comando;
   
-  <code>$ node hello.js</code>
+  `$ node hello.js`
   
 2. Criar um arquivo HTML e invocar o arquivo JavaScript para abrir no navegar.
   
   Nessa opção é necessário criar o arquivo HTML (hello.html) e inserir a tag "<script></script>" com a localização do arquivo JS.
   
-  <code><script src="hello.js"></script></code>
+  `<script src="hello.js"></script>`
   
   Quando executar o arquivo HTML então abrirá uma aba no navegador com a URL parecida com
   
-  <code>file://Users/username/hello.html</code>
+  `file://Users/username/hello.html`
   
 
 ## Textos no Programa JavaScript
