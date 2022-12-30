@@ -54,19 +54,19 @@ Agora você pode executar ele de duas formas:
 
 1. Indo no terminal e abrindo o arquivo pelo comando
    
-   <code>$ node hello.js</code>
+   `$ node hello.js`
 
 2. Criar um arquivo HTML e invocar o arquivo JavaScript para abrir no navegar.
    
-   Nessa opção é necessário criar o arquivo HTML (hello.html) e inserir a tag `script></script>` com a localização do arquivo JS.
-   
-   ```html
-   <script src="hello.js"></script>
-   ```
-   
+   Nessa opção é necessário criar o arquivo HTML (hello.html) e inserir a tag `<script></script>` com a localização do arquivo JS.
+
+```html
+<script src="hello.js"></script>
+```
+
    Quando executar o arquivo HTML então abrirá uma aba no navegador com a URL parecida com
    
-   <code>file://Users/username/hello.html</code>
+   `file://Users/username/hello.html`
 
 ## Textos no Programa JavaScript
 
@@ -89,25 +89,19 @@ O JavaScript irá interpretar como `return; true;` e pode gerar um erro.
 
 Aqui estão todas as palavras que são reservadas para a construção do código JavaScript e só podem ser empregradas para desempenhar a função pela qual foi feita.
 
-```
+``` markup
 as const export get null target void
-
 async continue extends if of this while
-
 await debugger false import return throw with
-
 break default finally in set true yield
-
 case delete for instanceof static try
-
 catch do from let super typeof
-
 class else function new switch var
 ```
 
 Todas essas palavras são reservadas pois já desempenham um papel na linguagem, mas tem outras palavras que são reservadas para possível uso em futuras versões como:
 
-```
+``` markup
 enum implements interface package private protected public 
 arguments eval
 ```
