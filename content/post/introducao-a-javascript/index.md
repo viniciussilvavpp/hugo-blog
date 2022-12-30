@@ -46,24 +46,27 @@ Outro modo de usar o JavaScript é instalando o Node pelo site [https://nodejs.o
 
 Quando você quiser experimentar criar blocos maiores de códigos é melhor criar um arquivo próprio onde você pode navegar livremente por ele. Para indentificar os arquivos próprios de código JavaScript, usa-se a terminação ".js". Nesse exemplo iremos criar o "hello.js" e escrever o seguinte código.
 
-`console.log("Hello World!");`
+```js
+console.log("Hello World!");
+```
 
 Agora você pode executar ele de duas formas:
 
-1. Indo no terminal e abrindo o arquivo usando a linha de comando;
-  
-  `$ node hello.js`
-  
+1. Indo no terminal e abrindo o arquivo pelo comando
+   
+   <code>$ node hello.js</code>
+
 2. Criar um arquivo HTML e invocar o arquivo JavaScript para abrir no navegar.
-  
-  Nessa opção é necessário criar o arquivo HTML (hello.html) e inserir a tag de "script" com a localização do arquivo JS.
-  
-  `<script src="hello.js"></script>`
-  
-  Quando executar o arquivo HTML então abrirá uma aba no navegador com a URL parecida com
-  
-  `file://Users/username/hello.html`
-  
+   
+   Nessa opção é necessário criar o arquivo HTML (hello.html) e inserir a tag `script></script>` com a localização do arquivo JS.
+   
+   ```html
+   <script src="hello.js"></script>
+   ```
+   
+   Quando executar o arquivo HTML então abrirá uma aba no navegador com a URL parecida com
+   
+   <code>file://Users/username/hello.html</code>
 
 ## Textos no Programa JavaScript
 
@@ -75,8 +78,10 @@ Além disso, em geral o JavaScript ignora quebra de linhas para que você consig
 
 As exceções que não deve ocorrer a quebra de linha é após as palavras reservadas *return, yield, throw, break*, e *continue*. Além disso, não pode ter quebra linha após os operadores **++** e **--** , e após o símbolo de "*arrow function*" (=>), que nada mais é do que uma forma resumida de declarar uma função. Um exemplo de como não usar a liberdade dada pelas quebra de linha:
 
-`return
-true;`
+```js
+return
+true;
+```
 
 O JavaScript irá interpretar como `return; true;` e pode gerar um erro.
 
@@ -84,23 +89,28 @@ O JavaScript irá interpretar como `return; true;` e pode gerar um erro.
 
 Aqui estão todas as palavras que são reservadas para a construção do código JavaScript e só podem ser empregradas para desempenhar a função pela qual foi feita.
 
-`as const export get null target void`
+```
+as const export get null target void
 
-`async continue extends if of this while`
+async continue extends if of this while
 
-`await debugger false import return throw with`
+await debugger false import return throw with
 
-`break default finally in set true yield`
+break default finally in set true yield
 
-`case delete for instanceof static try`
+case delete for instanceof static try
 
-`catch do from let super typeof`
+catch do from let super typeof
 
-`class else function new switch var`
+class else function new switch var
+```
 
 Todas essas palavras são reservadas pois já desempenham um papel na linguagem, mas tem outras palavras que são reservadas para possível uso em futuras versões como:
 
-`enum implements interface package private protected public arguments eval`
+```
+enum implements interface package private protected public 
+arguments eval
+```
 
 ## Próximos Passos
 
