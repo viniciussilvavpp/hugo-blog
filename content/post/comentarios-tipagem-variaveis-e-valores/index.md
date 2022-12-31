@@ -3,7 +3,7 @@ title: JavaScript - Comentários, literals e tipagem
 description: Aqui daremos os primeiros passos para começar a entender a composição dos códigos em JavaScript, começando pela declaração de comentários...
 slug: javascript-comentarios-literals-tipagem
 date: 2022-12-30 14:22:00+0000
-image: jsjsjs.jpg
+image: banner.jpg
 categories:
     - Programação
 tags:
