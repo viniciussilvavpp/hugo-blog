@@ -11,9 +11,9 @@ tags:
     - javascript
 ---
 
-# JavaScript - Comentários, literals e tipagem
+# Aprendendo o básico da linguagem #1  
   
-Aqui daremos os primeiros passos para começar a entender a composição dos códigos em JavaScript, começando pela declaração de comentários porque fazer comentários nos códigos além de ser uma parte muito importante no aprendizado de qualquer linguagem, também é vital para a organização.  
+Aqui daremos os primeiros passos para começar a entender a composição dos códigos em JavaScript, começando pela declaração de comentários porque fazer comentários nos códigos além de ser uma parte muito importante no aprendizado de qualquer linguagem, também é vital para a organização.
 Após isso veremos os que são *literals* e como eles são categorizados por tipos e que, por sua vez, podem ser atribuídos como valores de variáveis. Nesse percurso, iremos com calma e se alguma coisa ficou confusa, abaixo será explicado com exemplos e ficará tudo certo.
   
 ## Fazer comentários no código JavaScript  
@@ -50,7 +50,7 @@ Os *literals* são usados para definir valores sem precisar usar variáveis ou o
   
 ## A Tipagem no JavaScript  
   
-O JavaScript é considerada uma linguagem dinâmica fortemente tipada. Isso quer dizer que ela possui dados definidos por tipos mas que podem ser alterados em tempo de execução. Nessa linguagem os tipos são definidos de duas formas: tipos primitivos e tipos de objetos. 
+O JavaScript é considerada uma linguagem dinâmica de tipagem fraca. Isso quer dizer que as variáveis em JavaScript não estão associadas a nenhum valor específico, fazendo que elas possam receber qualquer tipo de dado e ter seu valor trocado independentemente do seu tipo. Nessa linguagem os tipos são definidos em duas categorias: tipos primitivos e tipos de objetos. 
 Existem seis tipos primitivos definidos como **string, número, booleano, nulo, indefinido e símbolo** e três tipos de objetos: **Object, Array** e **Function**. 
 Os três primeiros tipos primitivos já foram definidos onde fala sobre *String literals*, *Literals numéricos* e *Literals booleanos*, respectivamente. Agora vamos falar um pouco sobre o tipo nulo, indefinido e símbolo.  
 
