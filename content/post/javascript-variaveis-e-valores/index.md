@@ -14,7 +14,7 @@ tags:
 # JavaScript - Variáveis e seus valores
 ## Como declarar variável no JavaScript
 
-Uma das partes mais fundamentais de qualquer linguagem de programação é usar nomes, que também são chamados de identificadores, para assumir algum valor. Usar um nome associado a algum valor permite que o programador tenha acesso ao valor pelo nome dado. Quando isso é feito, chama-se o identificador de **variável**. O termo variável também indica que novos valores podem ser associados àquele identificador enquanto o programa é executado. Se você quiser que uma variável assuma o mesmo valor sempre que chamada, então é declarado como uma **constante**.
+Uma das partes mais fundamentais de qualquer linguagem de programação é usar nomes para assumir algum valor, também chamados de *identificadores*. Usar um nome associado a algum valor permite que o programador tenha acesso ao valor pelo nome dado. Quando isso é feito, chama-se o identificador de **variável**. O termo variável também indica que novos valores podem ser associados àquele identificador enquanto o programa é executado. Se você quiser que uma variável assuma o mesmo valor sempre que chamada, então é declarado como uma **constante**.
 
 Antes de usar uma variável você precisa *declarar* ela. Para isso, a partir da versão ES6, usa-se as palavras-chave `let` e `const`, onde a primeira se trata de uma variável comum e a segunda empregada para representar constantes. 
 ``` js
