@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Vinicius Notes</title><link>https://viniciusnotes.vercel.app/post/</link><description>Recent content in Posts on Vinicius Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 02 Jan 2023 12:34:00 +0000</lastBuildDate><atom:link href="https://viniciusnotes.vercel.app/post/index.xml" rel="self" type="application/rss+xml"/><item><title>JavaScript - Variáveis e valores</title><link>https://viniciusnotes.vercel.app/p/javascript-variaveis-e-valores/</link><pubDate>Mon, 02 Jan 2023 12:34:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/p/javascript-variaveis-e-valores/</guid><description>&lt;img src="https://viniciusnotes.vercel.app/p/javascript-variaveis-e-valores/banner.jpg" alt="Featured image of post JavaScript - Variáveis e valores" />&lt;h1 id="javascript---variáveis-e-seus-valores">JavaScript - Variáveis e seus valores&lt;/h1>
+&lt;h2 id="como-declarar-variável-no-javascript">Como declarar variável no JavaScript&lt;/h2>
+&lt;p>Uma das partes mais fundamentais de qualquer linguagem de programação é usar nomes para assumir algum valor, também chamados de &lt;em>identificadores&lt;/em>. Usar um nome associado a algum valor permite que o programador tenha acesso ao valor pelo nome dado. Quando isso é feito, chama-se o identificador de &lt;strong>variável&lt;/strong>. O termo variável também indica que novos valores podem ser associados àquele identificador enquanto o programa é executado. Se você quiser que uma variável assuma o mesmo valor sempre que chamada, então é declarado como uma &lt;strong>constante&lt;/strong>.&lt;/p>
+&lt;p>Antes de usar uma variável você precisa &lt;em>declarar&lt;/em> ela. Para isso, a partir da versão ES6, usa-se as palavras-chave &lt;code>let&lt;/code> e &lt;code>const&lt;/code>, onde a primeira se trata de uma variável comum e a segunda empregada para representar constantes.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span> &lt;span class="nx">x&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// declara a variável &amp;#34;x&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">let&lt;/span> &lt;span class="nx">k&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">l&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">m&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// é possível declarar mais de uma variável em uma linha
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">meunome&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// declara a constante &amp;#34;meunome&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>É considerado uma boa prática de programação associar algum valor inicial ao declarar uma variável, mas é &lt;strong>obrigatório&lt;/strong> para constantes, porque se declarar uma constante e não atribuir um valor, gerará um erro. Esse processo é também conhecido como a inicialização da variável. Faça isso sempre que possível.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span> &lt;span class="nx">k&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">l&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">m&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">meunome&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;JoaozinPVP&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Quando não é especificado um valor para a variável usando o &lt;code>let&lt;/code>, ela assumirá o valor &lt;em>undefined&lt;/em> até que algum valor seja associado a ela e as constantes sempre manterão o valor indicado na declaração, por isso é necessário indicar o valor nesse momento.&lt;/p>
+&lt;p>Você pode ver também que em muitos códigos as &lt;strong>constantes&lt;/strong> apresentam o nome todo escrito em letra maiúscula. Isso é apenas uma convenção usada como forma de identificar mais facilmente o que são variáveis e constantes no código. Não é uma lei, mas é uma forma de organizar o código.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">PI&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">3.14&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">GRAVITY&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">9.81&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="escopo-de-variáveis-e-constantes">Escopo de Variáveis e Constantes&lt;/h2>
+&lt;p>O escopo das variáveis é a parte do programa que determina onde as variáveis são definidas. Variáveis e constantes funcionam como tendo escopo por bloco, onde elas só apresentam valores dentro do contexto em que são definidas. No JavaScript, um arquivo é um bloco, as classes e funções (detalhadas futuramente) funcionam como blocos, assim como instruções de condição &lt;em>if/else&lt;/em>, laços de repetição (&lt;em>for, while&lt;/em>) e assim por diante também são bloco.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">function&lt;/span> &lt;span class="nx">bhaskara&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">b&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">c&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="c1">// variáveis &amp;#34;x1&amp;#34;, &amp;#34;x2&amp;#34; e &amp;#34;delta&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nx">x1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">x2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">delta&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// com escopo limitado por uma função
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">delta&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">b&lt;/span>&lt;span class="o">**&lt;/span>&lt;span class="mi">2&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nx">a&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nx">c&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">x1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">delta&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nx">a&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">x2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">delta&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nx">a&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Valor de x&amp;#39; é &amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">x1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34; e x&amp;#39;&amp;#39; é &amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">x2&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span> &lt;span class="nx">myName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;Manoel Gomes&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kd">let&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nx">myName&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="c1">// variável &amp;#34;element&amp;#34; com escopo limitado
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nx">element&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">array&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">];&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="c1">// por laço de repetição
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Em resumo, pode-se dizer que se uma variável ou constante é declarada dentro de um conjunto de chaves, as chaves são o que limitam seu escopo, fazendo com que fora das chaves ela não tenha definição. E em casos que são declaradas como parte de um &lt;em>for, for/in, for/of&lt;/em> o corpo do laço de repetição é seu escopo.&lt;/p>
+&lt;p>Além disso, quando um variável ou constante é declarada fora de qualquer estrutura de bloco, ela é chamada de &lt;strong>variável global&lt;/strong> ou &lt;strong>constante de escopo global&lt;/strong>. Isso implica que esse elemento pode ser acessado em todo o arquivo que está contido.&lt;/p>
+&lt;h2 id="declarações-repetidas">Declarações repetidas&lt;/h2>
+&lt;p>Um caso que mostra bem como o escopo da variável ou constante faz diferença na execução do código é usar o mesmo nome da variável em escopos diferentes. Isso é possível porque no JavaScript os valores são definidos de acordo apenas no escopo em que as variáveis/constantes se encontram.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">x&lt;/span> &lt;span class="o">===&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">x&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// Exibe &amp;#34;5&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">x&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// Exibe &amp;#34;4&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">let&lt;/span> &lt;span class="nx">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// Erro de sintaxe ao tentar redeclarar &amp;#34;x&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="declaração-de-variável-usando-var">Declaração de variável usando &lt;em>var&lt;/em>&lt;/h2>
+&lt;p>Em versões anteriores à ES6, a única forma de declarar uma variável no JavaScript era usando a palavra-chave &lt;code>var&lt;/code>. Mesmo ela tendo comportamento geralmente comparado com &lt;code>let&lt;/code>, elas funcionam de formas diferentes.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">x&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[],&lt;/span> &lt;span class="nx">tamanho&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">data&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nx">tamanho&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">]);&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Como podemos ver no código acima, a declaração usando &lt;code>var&lt;/code> e &lt;code>let&lt;/code> é indêntico, mas agora vamos ver como elas funcionam de formas diferentes.&lt;/p>
+&lt;ul>
+&lt;li>Variáveis declaradas usando &lt;code>var&lt;/code> não obedecem o escopo por blocos. Ao invés disso, elas sempre se apresentam no topo do escopo da função que está contida, não importando se está dentro de estruturas de repetição ou condicionais.&lt;/li>
+&lt;li>Se usar a declaração &lt;code>var&lt;/code> fora de funções, ela se torna uma variável global. Até aqui nada de diferente da declaração por &lt;code>let&lt;/code>. Mas, a forma que &lt;code>var&lt;/code> assume a posição de variável global, elas são implementadas como propriedades do objeto global e os declarados por &lt;code>let&lt;/code> e &lt;code>const&lt;/code> não. No que isso implica? Quer dizer que variáveis declaradas com &lt;code>var&lt;/code> não podem deletadas do objeto global, sempre ocupando aquele espaço.&lt;/li>
+&lt;li>Diferentemente de variáveis declaradas com &lt;code>let&lt;/code>, é possível declarar a mesma variáveis várias vezes usando &lt;code>var&lt;/code>. Isso é acontece porque elas ela obedecem o escopo por função e não por bloco.&lt;/li>
+&lt;li>Por último, uma das coisas mais diferentes que acontece ao usar a declaração com &lt;code>var&lt;/code> é conhecido como &lt;em>hoisting&lt;/em>. Acontece que quando a variável é declarada com &lt;code>var&lt;/code> ela é definida no topo da função que pertence, mesmo que a iniciliazação seja feita onde você escreveu, mas a definição da variável ocorre no topo da função. Assim, a variável declarada com &lt;code>var&lt;/code> pode ser colocada em qualquer posição dentro da função sem retornar erros, onde pode existir o emprego dela em linhas anteriores à declaração. Isso pode resultar em diversos bugs, sem falar sobre o aspecto de desorganização do código. Com isso, o uso do &lt;code>let&lt;/code> é preferível atualmente, pois ele previne que a variável seja usada antes de ser definida e obedece o escopo por blocos.&lt;/li>
+&lt;/ul></description></item><item><title>JavaScript - Comentários, literals e tipagem</title><link>https://viniciusnotes.vercel.app/p/javascript-comentarios-literals-tipagem/</link><pubDate>Fri, 30 Dec 2022 14:22:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/p/javascript-comentarios-literals-tipagem/</guid><description>&lt;img src="https://viniciusnotes.vercel.app/p/javascript-comentarios-literals-tipagem/banner.jpg" alt="Featured image of post JavaScript - Comentários, literals e tipagem" />&lt;h1 id="aprendendo-o-básico-da-linguagem-1">Aprendendo o básico da linguagem #1&lt;/h1>
+&lt;p>Aqui daremos os primeiros passos para começar a entender a composição dos códigos em JavaScript, começando pela declaração de comentários porque fazer comentários nos códigos além de ser uma parte muito importante no aprendizado de qualquer linguagem, também é vital para a organização.
+Após isso veremos os que são &lt;em>literals&lt;/em> e como eles são categorizados por tipos e que, por sua vez, podem ser atribuídos como valores de variáveis. Nesse percurso, iremos com calma e se alguma coisa ficou confusa, abaixo será explicado com exemplos e ficará tudo certo.&lt;/p>
+&lt;h2 id="fazer-comentários-no-código-javascript">Fazer comentários no código JavaScript&lt;/h2>
+&lt;p>Os comentários em JavaScript podem ser feitos de duas formas: linha única ou múltiplas linhas. No primeiro caso basta adicionar duas barras (//) antes do texto do comentário, ficando como o exemplo abaixo:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Este texto é um comentário de linha única
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Por isso devo adicionar as duas barras em cada linha
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Já no segundo, para ter múltiplas linhas comentadas, usa-se &amp;ldquo;/&lt;em>&amp;rdquo; na abertura do comentário e &amp;ldquo;&lt;/em>/&amp;rdquo; para finalizar o comentário, ficando a seguinte forma:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/*
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">Aqui estou abrindo o comentário de múltiplas linhas.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">E mesma essa sendo outra linha, não preciso usar nenhum símbolo, porque ainda não foi fechada.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">Aqui finalizo o comentário
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">*/&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Os comentários são especialmente úteis para explicar ou desativar determinado código.&lt;/p>
+&lt;h2 id="o-que-são-literals-na-programação">O que são &lt;em>literals&lt;/em> na programação?&lt;/h2>
+&lt;p>No mundo da programação um &lt;em>literal&lt;/em> é um valor fixo declarado no código fonte na forma de texto ou número. O JavaScript, que é nosso objeto de estudo, apresenta alguns tipos de &lt;code>literals&lt;/code>:&lt;/p>
+&lt;ul>
+&lt;li>String literals: são sequência de caracteres declarados entre aspas simples ou aspas duplas.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;Olá mundo.&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;E ae meu bom.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>Literals numéricos: são números inteiros ou com casa decimal como &lt;code>20&lt;/code> ou &lt;code>1.62&lt;/code>.&lt;/li>
+&lt;li>Literals booleanos: são valores que representam verdadeiro ou false, sendo definidos pelas palavras &lt;code>true&lt;/code> e &lt;code>false&lt;/code>.&lt;/li>
+&lt;li>Array literals: são listas de valores separados por vírgula e entre colchetes. Exemplo: &lt;code>[1, 2, 3]&lt;/code>.&lt;/li>
+&lt;li>Literals de objetos: são conjuntos definidos por pares chave-valor colocados entre chaves. Exemplo: &lt;code>{nome: 'Zezinho', idade: 18}&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;p>Os &lt;em>literals&lt;/em> são usados para definir valores sem precisar usar variáveis ou objetos para armazenar valor. Mas é importante lembrar que &lt;em>literals&lt;/em> são valores fixos que não podem ser alterados depois de criados.&lt;/p>
+&lt;h2 id="a-tipagem-no-javascript">A Tipagem no JavaScript&lt;/h2>
+&lt;p>O JavaScript é considerada uma linguagem dinâmica de tipagem fraca. Isso quer dizer que as variáveis em JavaScript não estão associadas a nenhum valor específico, fazendo que elas possam receber qualquer tipo de dado e ter seu valor trocado independentemente do seu tipo. Nessa linguagem os tipos são definidos em duas categorias: tipos primitivos e tipos de objetos.
+Existem seis tipos primitivos definidos como &lt;strong>string, número, booleano, nulo, indefinido e símbolo&lt;/strong> e três tipos de objetos: &lt;strong>Object, Array&lt;/strong> e &lt;strong>Function&lt;/strong>.
+Os três primeiros tipos primitivos já foram definidos onde fala sobre &lt;em>String literals&lt;/em>, &lt;em>Literals numéricos&lt;/em> e &lt;em>Literals booleanos&lt;/em>, respectivamente. Agora vamos falar um pouco sobre o tipo nulo, indefinido e símbolo.&lt;/p>
+&lt;h3 id="tipos-primitivos-nulo-indefinido-e-símbolo">Tipos primitivos: nulo, indefinido e símbolo&lt;/h3>
+&lt;h4 id="tipo-nulo-e-indefinido">Tipo Nulo e Indefinido&lt;/h4>
+&lt;p>O tipo nulo em JavaScript é apresentado pela palavra-chave &lt;strong>null&lt;/strong> e ela quer dizer que há ausência de valor. Ao usar o operador &lt;code>typeof&lt;/code>, você verá que dará a resposta como &lt;strong>objeto&lt;/strong>. Isso quer dizer que o nulo pode ser interpretado como um objeto que possui o valor especial que indica &amp;ldquo;Nenhum objeto&amp;rdquo;. Mas na prática a palavra-chave &lt;strong>null&lt;/strong> é considerada como um membro único do seu próprio tipo para definir como &amp;ldquo;sem valor&amp;rdquo; para números, strings ou mesmo objetos.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">typeof&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Jose Ferreira&amp;#34;&lt;/span>&lt;span class="p">));&lt;/span> &lt;span class="c1">// =&amp;gt; &amp;#34;name&amp;#34; retorna string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">typeof&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">));&lt;/span> &lt;span class="c1">// =&amp;gt; null retorna objeto
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Além disso, o JavaScript possui outra palavra para indicar ausência de valor, no entanto, de uma forma diferente, já que no lugar de indicar que não há valor, ele mostra que o valor está indefinido. Essa palavra é o &lt;strong>undefined&lt;/strong>, que possui o papel de identificar quando uma variável não foi inicializada ou a propriedade de um objeto ou elemento de uma matriz não existem. Outro momento que o tipo indefinido pode aparecer é quando você executa uma função e não passa os valores esperados por ela.
+Podemos usar o operador &lt;code>typeof&lt;/code> novamente para vizualizar novamente.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span> &lt;span class="nx">x&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// =&amp;gt; variável não inicializada
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">typeof&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">x&lt;/span>&lt;span class="p">));&lt;/span> &lt;span class="c1">// =&amp;gt; retorna &amp;#34;undefined&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Normalmente muitos programadores evitam usar &lt;em>null&lt;/em> e &lt;em>undefined&lt;/em> nos seus códigos, já que essas palavras geralmente são associadas a erros ou algo imprevisto na execução do programa.&lt;/p>
+&lt;h4 id="símbolos">Símbolos&lt;/h4>
+&lt;p>Os símbolos foram introduzidos na linguagem JavaScript na versão ES6 para servirem como nomes de propriedades não-strings. Para usar esse tipo basta usar a função &lt;code>Symbol()&lt;/code>, e ela irá armazenar o valor da string passada como parâmetro, mas toda vez que for executaerda, a função não terá as mesmas propriedades de objeto. Por exemplo:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span> &lt;span class="nx">strname&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;sou uma string&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// declarando uma string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">let&lt;/span> &lt;span class="nx">symname&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">Symbol&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;sou um simbolo&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// declarando um símbolo
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">typeof&lt;/span> &lt;span class="nx">strname&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// =&amp;gt; retorna &amp;#34;string&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">typeof&lt;/span> &lt;span class="nx">symname&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// =&amp;gt; retorna &amp;#34;Symbol&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Agora, se compararmos duas variáveis que recebem os mesmos símbolos com o operador de igualdade &lt;code>==&lt;/code>, veremos que elas são diferentes.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span> &lt;span class="nx">sym1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">Symbol&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;sou um simbolo&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span> &lt;span class="nx">sym2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">Symbol&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;sou um simbolo&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">sym1&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nx">sym2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// =&amp;gt; retorna false
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Dessa forma, se você usar os mesmos nomes de símbolos, você pode ter certeza de que outros pedaços de código no seu programa não sobrescreverá acidentalmente as propriedades de outro símbolo.&lt;/p>
+&lt;h3 id="tipos-de-objetos-object-array-e-function">Tipos de objetos: Object, Array e Function&lt;/h3>
+&lt;p>Aqui seremos um pouco mais direto para definir o que é cada um deles porque serão mais detalhados em artigos individuais sobre cada um deles.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Object&lt;/strong>: é um conjunto de pares chave-valor entre chaves que representam um coleção de dados.&lt;/li>
+&lt;li>&lt;strong>Array&lt;/strong>: um conjunto de valores ordenados especificados entre colchetes e separados por vírgula.&lt;/li>
+&lt;li>&lt;strong>Function&lt;/strong>: uma função pode ser definida como um conjunto de código que executa determinada tarefa.
+Abaixo está um exemplo com cada um deles com suas estruturas.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">typeof&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;Toinho&amp;#34;&lt;/span>&lt;span class="p">});&lt;/span> &lt;span class="c1">// Saída: object
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">typeof&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">]);&lt;/span> &lt;span class="c1">// Saída: object
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">typeof&lt;/span> &lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{});&lt;/span> &lt;span class="c1">// Saída: function
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Para finalizar, você pode estranhar e se perguntar sobre o porquê do exemplo acima ter a saída do &lt;strong>array&lt;/strong> como &lt;em>object&lt;/em>. Na verdade isso está relacionado a forma que a linguagem JavaScript trata os dados, onde quase tudo é considerado um objeto e possuem propriedades de objetos. Isso será melhor tratado em outro post para não acabar prolongando demais.&lt;/p>
+&lt;p>No próximo artigo já iremos dar uma olhada sobre como usar variáveis e valores atribuídos a elas. Nesse ponto já será possível criar alguns códigos e brincar um pouco para sair da parte teórica. Valeu e até a próxima.&lt;/p></description></item><item><title>Introdução ao JavaScript</title><link>https://viniciusnotes.vercel.app/p/introducao-ao-javascript/</link><pubDate>Thu, 29 Dec 2022 18:51:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/p/introducao-ao-javascript/</guid><description>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-javascript/jsjsjs.jpg" alt="Featured image of post Introdução ao JavaScript" />&lt;h1 id="introdução-ao-javascript">Introdução ao JavaScript&lt;/h1>
+&lt;h2 id="um-pouco-de-história">Um pouco de história&lt;/h2>
+&lt;p>Para início de conversa, você sabia que o nome oficial da linguagem de programação JavaScript na verdade é ECMAScript?&lt;/p>
+&lt;p>Então, para resumir a história, o que aconteceu foi que a Netscape - empresa fundadora da linguagem - batizou inicialmente o nome da linguagem como JavaScript, e foi como ficou popularizada. Mas depois houve problemas de licenciamento, pois a empresa Sun MicroSystems (atual Oracle) já tinha a linguagem Java, licenciada como &amp;ldquo;Java-script&amp;rdquo;. Com isso, a Netscape precisou procurar outra alternativa.&lt;/p>
+&lt;p>Analisando o cenário da linguagem e vendo que ela foi submetida a padronização para a ECMA - Associação de Fabricantes de Computadores Europeus -, foi decidido que o nome oficial seria &amp;ldquo;ECMAScript&amp;rdquo;.&lt;/p>
+&lt;p>Na prática, esse conhecimento é mais importante para entender o porquê do nome de versões do JavaScript para pesquisas e ficar por dentro das atualizações, que são referenciadas pela sigla &amp;ldquo;ES&amp;rdquo; (abreviação de ECMAScript) acompanhada pelo ano da atualização - ES2018, ES2019, ES2020 são exemplos.&lt;/p>
+&lt;h2 id="funcionamento-do-javascript">Funcionamento do JavaScript&lt;/h2>
+&lt;p>O JavaScript é principalmente ligado ao desenvolvimento web, sendo o navegador o principal ambiente de execução do código. O ambiente do navegador permite que obtenha entradas pelo mouse e teclado do usuário através de requisições HTTP, além de permitir a exibição da saída em formato de HTML e CSS.&lt;/p>
+&lt;p>No entanto, desde 2010 foi disponibilizado outro ambiente para a execução do JavaScript, para não ficar preso apenas às funcionalidades dos navegadores. O NodeJS permite que o usuário controle todo o sistema operacional além de receber e enviar solicitações HTTP. Assim, o Node acabou se tornando uma opção viável e popular para implementar servidores web e usar o JavaScript para criação de scripts utilitários.&lt;/p>
+&lt;h2 id="primeiros-passos">Primeiros passos&lt;/h2>
+&lt;p>A forma mais eficiente de aprender alguma coisa nova é mexendo e testando por si mesmo para verificar o funcionamento das coisas até que se torne intuitivo, pois isso mostra que aprendeu de verdade. Sendo assim, vamos testar alguns códigos em JavaScript. Para isso, é necessário usar um interpretador da linguagem.&lt;/p>
+&lt;p>O jeito mais fácil de ter o primeiro contato com o JavaScript sem precisar instalar nada, basta abrir algum navegar e acessar a parte de &amp;ldquo;ferramentas de desenvolvedor web&amp;rdquo; (pressione F12, ou Ctrl-Shift-i, ou Command-Option-i) e escolher a aba de &amp;ldquo;Console&amp;rdquo;. Aqui você já está livre para digitar alguns códigos e pressionar enter para executar e ver o que acontece.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-javascript/Console-web.jpg"
+width="552"
+height="357"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-javascript/Console-web_hu6f6b1f379386b09e79fc36e8a42fd125_12737_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/introducao-ao-javascript/Console-web_hu6f6b1f379386b09e79fc36e8a42fd125_12737_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="371px"
+>&lt;/p>
+&lt;p>Outro modo de usar o JavaScript é instalando o Node pelo site &lt;a class="link" href="https://nodejs.org" target="_blank" rel="noopener"
+>https://nodejs.org&lt;/a>. Assim que a instalação estiver completa, você pode usar o terminal do computador e digitar &lt;strong>node&lt;/strong> para entrar na sessão interativa do JavaScript.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/introducao-ao-javascript/JS-no-terminal.jpg"
+width="652"
+height="438"
+srcset="https://viniciusnotes.vercel.app/p/introducao-ao-javascript/JS-no-terminal_huede060193b1919c65a270d7f6ce26cf6_24522_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/introducao-ao-javascript/JS-no-terminal_huede060193b1919c65a270d7f6ce26cf6_24522_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="148"
+data-flex-basis="357px"
+>&lt;/p>
+&lt;h2 id="hello-world-de-lei">Hello World (de lei)&lt;/h2>
+&lt;p>Quando você quiser experimentar criar blocos maiores de códigos é melhor criar um arquivo próprio onde você pode navegar livremente por ele. Para indentificar os arquivos próprios de código JavaScript, usa-se a terminação &amp;ldquo;.js&amp;rdquo;. Nesse exemplo iremos criar o &amp;ldquo;hello.js&amp;rdquo; e escrever o seguinte código.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello World!&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Agora você pode executar ele de duas formas:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Indo no terminal e abrindo o arquivo pelo comando&lt;/p>
+&lt;p>&lt;code>$ node hello.js&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Criar um arquivo HTML e invocar o arquivo JavaScript para abrir no navegar.&lt;/p>
+&lt;p>Nessa opção é necessário criar o arquivo HTML (hello.html) e inserir a tag &lt;code>&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;&lt;/code> com a localização do arquivo JS.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hello.js&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Quando executar o arquivo HTML então abrirá uma aba no navegador com a URL parecida com&lt;/p>
+&lt;p>&lt;code>file://Users/username/hello.html&lt;/code>&lt;/p>
+&lt;h2 id="textos-no-programa-javascript">Textos no Programa JavaScript&lt;/h2>
+&lt;p>O JavaScript é uma linguagem &lt;em>case-sensitive&lt;/em>. Ou seja, ela diferencia letras maiúsculas de minúsculas, o que dá mais possibilidades para nomear funções, variáveis  e outros identificadores.&lt;/p>
+&lt;p>Toda linguagem de programação possue algumas palavras que são reservadas e não podem ser usadas em outro contexto, exceto para o qual ela foi criada. No JavaScript, por exemplo, a palavra &amp;ldquo;while&amp;rdquo; só pode ser usada no contexto chamado de &lt;em>laços de repetição&lt;/em> (veremos melhor no futuro), mas se alterar e usar alguma letra maiúscula como &amp;ldquo;While&amp;rdquo; ou &amp;ldquo;WHILE&amp;rdquo;, não haverá problemas.&lt;/p>
+&lt;p>Além disso, em geral o JavaScript ignora quebra de linhas para que você consiga criar novas linhas e identar de forma que o código fique mais organizado e legível. Mas é preciso tomar cuidado, pois se for feita de forma errada pode causar problemas na execução do código.&lt;/p>
+&lt;p>As exceções que não deve ocorrer a quebra de linha é após as palavras reservadas &lt;em>return, yield, throw, break&lt;/em>, e &lt;em>continue&lt;/em>. Além disso, não pode ter quebra linha após os operadores &lt;strong>++&lt;/strong> e &lt;strong>&amp;ndash;&lt;/strong> , e após o símbolo de &amp;ldquo;&lt;em>arrow function&lt;/em>&amp;rdquo; (=&amp;gt;), que nada mais é do que uma forma resumida de declarar uma função. Um exemplo de como não usar a liberdade dada pelas quebra de linha:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="k">return&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kc">true&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>O JavaScript irá interpretar como &lt;code>return; true;&lt;/code> e pode gerar um erro.&lt;/p>
+&lt;h3 id="palavras-reservadas">Palavras Reservadas&lt;/h3>
+&lt;p>Aqui estão todas as palavras que são reservadas para a construção do código JavaScript e só podem ser empregradas para desempenhar a função pela qual foi feita.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">as const export get null target void
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">async continue extends if of this while
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">await debugger false import return throw with
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">break default finally in set true yield
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">case delete for instanceof static try
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">catch do from let super typeof
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">class else function new switch var
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Todas essas palavras são reservadas pois já desempenham um papel na linguagem, mas tem outras palavras que são reservadas para possível uso em futuras versões como:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">enum&lt;/span> &lt;span class="nx">implements&lt;/span> &lt;span class="kd">interface&lt;/span> &lt;span class="kn">package&lt;/span> &lt;span class="nx">private&lt;/span> &lt;span class="nx">protected&lt;/span> &lt;span class="nx">public&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">arguments&lt;/span> &lt;span class="nx">eval&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="próximos-passos">Próximos Passos&lt;/h2>
+&lt;p>Bom, se você chegou até aqui e conseguiu pelo menos seguir as explicações posso te dar meus parabéns, mas acredito que se essa for seu primeiro contato com uma linguagem de programação tiveram algumas coisas que você não entendeu porque ainda não foram explicadas. No entanto, dou a boa notícia que tudo exposto aqui será estudado mais a frente, onde será mais aprofundado sobre a sintaxe e comportamento da linguagem com mais exemplos.&lt;/p>
+&lt;p>Então, valeu pela atenção e até a próxima!&lt;/p></description></item><item><title>Análise de Circuitos</title><link>https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/</link><pubDate>Wed, 03 Aug 2022 19:51:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/</guid><description>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/thumb-circuito.jpg" alt="Featured image of post Análise de Circuitos" />&lt;h1 id="análise-de-circuitos---pt1">Análise de Circuitos - pt.1&lt;/h1>
+&lt;h2 id="introdução">Introdução&lt;/h2>
+&lt;p>Inicialmente, será abordado a composição de um circuito elétrico, considerando que é fundamental ter em mente as definições mais básicas sobre cada componente para facilitar a compreensão do seu funcionamento.&lt;/p>
+&lt;p>Para o estudo nessa fase inicial será usado o site &lt;a class="link" href="https://www.falstad.com/circuit/" target="_blank" rel="noopener"
+>Circuit Simulator Applet (falstad.com)&lt;/a> para ilustrar e verificar os circuitos. Ele foi escolhido por ser gratuito, bastando apenas acessar o site e já está pronto para uso, ter fácil navegação e ótima exibição do que está acontecendo no circuito, aprensetando todas as características de cada componente.&lt;/p>
+&lt;p>Os circuitos mais elementares podem ser resumidos em quatro componentes principais: resistores, fontes de corrente, fontes de tensão e o fio terra. Todos eles podem ser apresentados de maneiras diferentes, mas aqui serão usadas as seguintes notações:&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/componentes-do-circuito.jpg"
+width="631"
+height="114"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/componentes-do-circuito_hud8f6b21d5130be4c0c7fb3eeaaae1c64_10222_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/componentes-do-circuito_hud8f6b21d5130be4c0c7fb3eeaaae1c64_10222_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="553"
+data-flex-basis="1328px"
+>&lt;/p>
+&lt;p>Abaixo está um circuito utilizando o site Circuit Simulator Applet para já ir familiarizando com o ambiente.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/circuito-basico.jpg"
+width="424"
+height="358"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/circuito-basico_hu24f80f7c4cd7570847cfedce62c2ed6a_19947_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/circuito-basico_hu24f80f7c4cd7570847cfedce62c2ed6a_19947_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Exemplo de circuito elétrico"
+class="gallery-image"
+data-flex-grow="118"
+data-flex-basis="284px"
+>&lt;/p>
+&lt;p>Descrevendo rapidamente o circuito, pode-se dizer que todos os componentes estão em &lt;em>paralelo&lt;/em>, sendo dois resistores de 100 &lt;em>Ohms&lt;/em> (&lt;strong>&lt;strong>Ω&lt;/strong>&lt;/strong>), uma fonte de tensão 1 &lt;em>Volt&lt;/em> (&lt;strong>V&lt;/strong>), uma fonte de corrente de 10 &lt;em>miliampères&lt;/em> (&lt;strong>mA&lt;/strong>) e o fio terra na parte inferior. As fontes são responsáveis por fornecer energia para o o circuito e os resistores possibilitam controlar o fluxo de carga elétrica em determinado segmento através do &lt;em>efeito Joule&lt;/em>, o qual é cararacterizado por transformar energia elétrica em térmica acarretando na alteração no fluxo de carga elétrica/corrente.&lt;/p>
+&lt;h2 id="lei-de-ohm">Lei de Ohm&lt;/h2>
+&lt;p>A &lt;strong>Lei de Ohm&lt;/strong>, nomeada em homenagem ao seu descobridor Georg Simon Ohm (1787-1854), afirma que a tensão &lt;strong>V&lt;/strong> em um resistor é diretamente proporcional à corrente &lt;strong>i&lt;/strong> que o atravessa.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Lei-de-ohm.jpg"
+width="175"
+height="35"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Lei-de-ohm_hue93455c0e2549cd4081902c50b3d84fb_2690_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Lei-de-ohm_hue93455c0e2549cd4081902c50b3d84fb_2690_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="500"
+data-flex-basis="1200px"
+>&lt;/p>
+&lt;p>Essa equação é de suma importância porque por meio dela é possivel determinar os valores de tensão, corrente e resistência dos componentes, fazendo simplesmente as seguintes relações algébricas:&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-relacao-algebrica.jpg"
+width="311"
+height="69"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-relacao-algebrica_hue40913833a10f9be1e9c9d1f14919fb5_3851_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-relacao-algebrica_hue40913833a10f9be1e9c9d1f14919fb5_3851_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="450"
+data-flex-basis="1081px"
+>&lt;/p>
+&lt;p>Ademais, pode-se usar o mesmo procedimento com a equação da potência, que possui &lt;em>Watts&lt;/em> (&lt;strong>W&lt;/strong>) como unidade de medida.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-potencia.jpg"
+width="201"
+height="67"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-potencia_hucab53da5fc1fc0a4851d0d25a5bbeed4_3464_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-potencia_hucab53da5fc1fc0a4851d0d25a5bbeed4_3464_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="300"
+data-flex-basis="720px"
+>&lt;/p>
+&lt;p>Outra medida muito presente na análise de circuitos é a &lt;em>condutância&lt;/em>, a qual é equivalente ao inverso da resistência, sendo a medida que diz o quanto um componente é capaz de conduzir corrente elétrica. Sua unidade de medida é dada por &lt;em>mho&lt;/em> (&lt;strong>&lt;strong>℧&lt;/strong>&lt;/strong>) ou &lt;em>siemens&lt;/em> (&lt;strong>S&lt;/strong>).&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Condutancia-lei.jpg"
+width="151"
+height="59"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Condutancia-lei_hu62e5093c580f11e2c3590f373391a5bd_2577_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Condutancia-lei_hu62e5093c580f11e2c3590f373391a5bd_2577_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="255"
+data-flex-basis="614px"
+>&lt;/p>
+&lt;h3 id="exemplo-de-aplicação-da-lei-de-ohm">Exemplo de aplicação da Lei de Ohm:&lt;/h3>
+&lt;p>Considerando um ferro elétrico que drena 2 A em uma tensão de 120 V. Determine qual a sua resistência interna.&lt;/p>
+&lt;blockquote>
+&lt;p>Resposta: R = v/i = 120/2 = 60 Ω&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="topologia-de-rede">Topologia de rede&lt;/h2>
+&lt;p>O circuito geralmente é chamada de &lt;em>rede&lt;/em> ao se tratar da sua topologia. A topologia de rede é sobre as propriedades ligadas a como os componentes estão dispostos na rede, considerando a sua configuração geométrica das conexões. A rede é composta por ramos, nós e laços.&lt;/p>
+&lt;blockquote>
+&lt;p>O &lt;em>ramo&lt;/em> é um elemento único como o resistor ou fonte.&lt;/p>
+&lt;/blockquote>
+&lt;p>Na verdade ser generalizado para se tratar de qualquer elemento que possui dois terminais. Por exemplo, o circuito apresentado no início é formado por 4 ramos: 2 resistores, 1 fonte de tensão e 1 fonte de corrente. Vale destacar que o terra &lt;em>não&lt;/em> é um ramo porque ele possui apenas um terminal.&lt;/p>
+&lt;blockquote>
+&lt;p>O &lt;em>nó&lt;/em> é apenas um ponto de conexão entre dois ou mais ramos.&lt;/p>
+&lt;/blockquote>
+&lt;p>No circuito, o nó é identificado por um ponto. No entanto, ainda usando o circuito ilustrado anteriormente como exemplo, quando componentes estão conectados paralelamente, eles possuem um nó em comum, já que não existe nada entre a conexão deles. Por isso, aquela rede tem apenas 2 nós: 1 na parte superior e 1 na parte inferior, sendo duas linhas que ligam todos os elementos.&lt;/p>
+&lt;blockquote>
+&lt;p>O &lt;em>laço&lt;/em> é qualquer caminho fechado no circuito.&lt;/p>
+&lt;/blockquote>
+&lt;p>O caminho em si do laço na rede é arbitrária, mas deve partir de um nó, seguir por qualquer caminho e retornar para o ponto de partida sem passar por qualquer nó mais de uma vez. Diz-se que o laço é &lt;em>independente&lt;/em> se nele tiver ao menos um &lt;em>ramo&lt;/em> que não é compartilhado por outro laço independente.&lt;/p>
+&lt;p>As equações para a análise de rede é baseada nesses conceitos, onde cada um pode fornecer meios de como montar as equações que determinam o comportamento de dado elemento, em função da corrente e tensão no circuito.&lt;/p>
+&lt;p>Além disso, os elementos podem ser conectados de duas formas: em &lt;em>série&lt;/em> e em &lt;em>paralelo&lt;/em>.&lt;/p>
+&lt;p>Considera-se que estão conectados em &lt;strong>paralelo&lt;/strong> (acredito que você já tenha alguma ideia do que se trata pelos exemplos anteriores) quando dois ou mais elementos possuem dois nós em comum, o que acarreta em terem a mesma tensão. Já os que ficam conectados em &lt;strong>série&lt;/strong> compartilham exclusivamente um único nó, onde passa a mesma corrente.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/associacao-em-serie-e-paralelo.jpg"
+width="480"
+height="185"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/associacao-em-serie-e-paralelo_hu047ec3bf9fd1dffb2a812390a3b16493_9376_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/associacao-em-serie-e-paralelo_hu047ec3bf9fd1dffb2a812390a3b16493_9376_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="259"
+data-flex-basis="622px"
+>&lt;/p>
+&lt;p>Então, na próxima postagem dessa série de estudos (minha revisão) sobre circuitos elétricos iremos adentrar nas Leis de Kirchhoff e já conseguiremos realizar algumas análises de circuitos.&lt;/p>
+&lt;blockquote>
+&lt;p>Materias de base: Análise básica de Circuitos para Engenharia - IRWIN 10° edição; Fundamentos Circuitos Elétricos - SADIKU.&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

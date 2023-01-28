@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>circuito elétrico on Vinicius Notes</title><link>https://viniciusnotes.vercel.app/tags/circuito-el%C3%A9trico/</link><description>Recent content in circuito elétrico on Vinicius Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 03 Aug 2022 19:51:00 +0000</lastBuildDate><atom:link href="https://viniciusnotes.vercel.app/tags/circuito-el%C3%A9trico/index.xml" rel="self" type="application/rss+xml"/><item><title>Análise de Circuitos</title><link>https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/</link><pubDate>Wed, 03 Aug 2022 19:51:00 +0000</pubDate><guid>https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/</guid><description>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/thumb-circuito.jpg" alt="Featured image of post Análise de Circuitos" />&lt;h1 id="análise-de-circuitos---pt1">Análise de Circuitos - pt.1&lt;/h1>
+&lt;h2 id="introdução">Introdução&lt;/h2>
+&lt;p>Inicialmente, será abordado a composição de um circuito elétrico, considerando que é fundamental ter em mente as definições mais básicas sobre cada componente para facilitar a compreensão do seu funcionamento.&lt;/p>
+&lt;p>Para o estudo nessa fase inicial será usado o site &lt;a class="link" href="https://www.falstad.com/circuit/" target="_blank" rel="noopener"
+>Circuit Simulator Applet (falstad.com)&lt;/a> para ilustrar e verificar os circuitos. Ele foi escolhido por ser gratuito, bastando apenas acessar o site e já está pronto para uso, ter fácil navegação e ótima exibição do que está acontecendo no circuito, aprensetando todas as características de cada componente.&lt;/p>
+&lt;p>Os circuitos mais elementares podem ser resumidos em quatro componentes principais: resistores, fontes de corrente, fontes de tensão e o fio terra. Todos eles podem ser apresentados de maneiras diferentes, mas aqui serão usadas as seguintes notações:&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/componentes-do-circuito.jpg"
+width="631"
+height="114"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/componentes-do-circuito_hud8f6b21d5130be4c0c7fb3eeaaae1c64_10222_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/componentes-do-circuito_hud8f6b21d5130be4c0c7fb3eeaaae1c64_10222_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="553"
+data-flex-basis="1328px"
+>&lt;/p>
+&lt;p>Abaixo está um circuito utilizando o site Circuit Simulator Applet para já ir familiarizando com o ambiente.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/circuito-basico.jpg"
+width="424"
+height="358"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/circuito-basico_hu24f80f7c4cd7570847cfedce62c2ed6a_19947_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/circuito-basico_hu24f80f7c4cd7570847cfedce62c2ed6a_19947_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Exemplo de circuito elétrico"
+class="gallery-image"
+data-flex-grow="118"
+data-flex-basis="284px"
+>&lt;/p>
+&lt;p>Descrevendo rapidamente o circuito, pode-se dizer que todos os componentes estão em &lt;em>paralelo&lt;/em>, sendo dois resistores de 100 &lt;em>Ohms&lt;/em> (&lt;strong>&lt;strong>Ω&lt;/strong>&lt;/strong>), uma fonte de tensão 1 &lt;em>Volt&lt;/em> (&lt;strong>V&lt;/strong>), uma fonte de corrente de 10 &lt;em>miliampères&lt;/em> (&lt;strong>mA&lt;/strong>) e o fio terra na parte inferior. As fontes são responsáveis por fornecer energia para o o circuito e os resistores possibilitam controlar o fluxo de carga elétrica em determinado segmento através do &lt;em>efeito Joule&lt;/em>, o qual é cararacterizado por transformar energia elétrica em térmica acarretando na alteração no fluxo de carga elétrica/corrente.&lt;/p>
+&lt;h2 id="lei-de-ohm">Lei de Ohm&lt;/h2>
+&lt;p>A &lt;strong>Lei de Ohm&lt;/strong>, nomeada em homenagem ao seu descobridor Georg Simon Ohm (1787-1854), afirma que a tensão &lt;strong>V&lt;/strong> em um resistor é diretamente proporcional à corrente &lt;strong>i&lt;/strong> que o atravessa.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Lei-de-ohm.jpg"
+width="175"
+height="35"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Lei-de-ohm_hue93455c0e2549cd4081902c50b3d84fb_2690_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Lei-de-ohm_hue93455c0e2549cd4081902c50b3d84fb_2690_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="500"
+data-flex-basis="1200px"
+>&lt;/p>
+&lt;p>Essa equação é de suma importância porque por meio dela é possivel determinar os valores de tensão, corrente e resistência dos componentes, fazendo simplesmente as seguintes relações algébricas:&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-relacao-algebrica.jpg"
+width="311"
+height="69"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-relacao-algebrica_hue40913833a10f9be1e9c9d1f14919fb5_3851_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-relacao-algebrica_hue40913833a10f9be1e9c9d1f14919fb5_3851_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="450"
+data-flex-basis="1081px"
+>&lt;/p>
+&lt;p>Ademais, pode-se usar o mesmo procedimento com a equação da potência, que possui &lt;em>Watts&lt;/em> (&lt;strong>W&lt;/strong>) como unidade de medida.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-potencia.jpg"
+width="201"
+height="67"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-potencia_hucab53da5fc1fc0a4851d0d25a5bbeed4_3464_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/lei-de-ohm-potencia_hucab53da5fc1fc0a4851d0d25a5bbeed4_3464_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="300"
+data-flex-basis="720px"
+>&lt;/p>
+&lt;p>Outra medida muito presente na análise de circuitos é a &lt;em>condutância&lt;/em>, a qual é equivalente ao inverso da resistência, sendo a medida que diz o quanto um componente é capaz de conduzir corrente elétrica. Sua unidade de medida é dada por &lt;em>mho&lt;/em> (&lt;strong>&lt;strong>℧&lt;/strong>&lt;/strong>) ou &lt;em>siemens&lt;/em> (&lt;strong>S&lt;/strong>).&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Condutancia-lei.jpg"
+width="151"
+height="59"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Condutancia-lei_hu62e5093c580f11e2c3590f373391a5bd_2577_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/Condutancia-lei_hu62e5093c580f11e2c3590f373391a5bd_2577_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="255"
+data-flex-basis="614px"
+>&lt;/p>
+&lt;h3 id="exemplo-de-aplicação-da-lei-de-ohm">Exemplo de aplicação da Lei de Ohm:&lt;/h3>
+&lt;p>Considerando um ferro elétrico que drena 2 A em uma tensão de 120 V. Determine qual a sua resistência interna.&lt;/p>
+&lt;blockquote>
+&lt;p>Resposta: R = v/i = 120/2 = 60 Ω&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="topologia-de-rede">Topologia de rede&lt;/h2>
+&lt;p>O circuito geralmente é chamada de &lt;em>rede&lt;/em> ao se tratar da sua topologia. A topologia de rede é sobre as propriedades ligadas a como os componentes estão dispostos na rede, considerando a sua configuração geométrica das conexões. A rede é composta por ramos, nós e laços.&lt;/p>
+&lt;blockquote>
+&lt;p>O &lt;em>ramo&lt;/em> é um elemento único como o resistor ou fonte.&lt;/p>
+&lt;/blockquote>
+&lt;p>Na verdade ser generalizado para se tratar de qualquer elemento que possui dois terminais. Por exemplo, o circuito apresentado no início é formado por 4 ramos: 2 resistores, 1 fonte de tensão e 1 fonte de corrente. Vale destacar que o terra &lt;em>não&lt;/em> é um ramo porque ele possui apenas um terminal.&lt;/p>
+&lt;blockquote>
+&lt;p>O &lt;em>nó&lt;/em> é apenas um ponto de conexão entre dois ou mais ramos.&lt;/p>
+&lt;/blockquote>
+&lt;p>No circuito, o nó é identificado por um ponto. No entanto, ainda usando o circuito ilustrado anteriormente como exemplo, quando componentes estão conectados paralelamente, eles possuem um nó em comum, já que não existe nada entre a conexão deles. Por isso, aquela rede tem apenas 2 nós: 1 na parte superior e 1 na parte inferior, sendo duas linhas que ligam todos os elementos.&lt;/p>
+&lt;blockquote>
+&lt;p>O &lt;em>laço&lt;/em> é qualquer caminho fechado no circuito.&lt;/p>
+&lt;/blockquote>
+&lt;p>O caminho em si do laço na rede é arbitrária, mas deve partir de um nó, seguir por qualquer caminho e retornar para o ponto de partida sem passar por qualquer nó mais de uma vez. Diz-se que o laço é &lt;em>independente&lt;/em> se nele tiver ao menos um &lt;em>ramo&lt;/em> que não é compartilhado por outro laço independente.&lt;/p>
+&lt;p>As equações para a análise de rede é baseada nesses conceitos, onde cada um pode fornecer meios de como montar as equações que determinam o comportamento de dado elemento, em função da corrente e tensão no circuito.&lt;/p>
+&lt;p>Além disso, os elementos podem ser conectados de duas formas: em &lt;em>série&lt;/em> e em &lt;em>paralelo&lt;/em>.&lt;/p>
+&lt;p>Considera-se que estão conectados em &lt;strong>paralelo&lt;/strong> (acredito que você já tenha alguma ideia do que se trata pelos exemplos anteriores) quando dois ou mais elementos possuem dois nós em comum, o que acarreta em terem a mesma tensão. Já os que ficam conectados em &lt;strong>série&lt;/strong> compartilham exclusivamente um único nó, onde passa a mesma corrente.&lt;/p>
+&lt;p>&lt;img src="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/associacao-em-serie-e-paralelo.jpg"
+width="480"
+height="185"
+srcset="https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/associacao-em-serie-e-paralelo_hu047ec3bf9fd1dffb2a812390a3b16493_9376_480x0_resize_q75_box.jpg 480w, https://viniciusnotes.vercel.app/p/analise-de-circuitos-pt-1/associacao-em-serie-e-paralelo_hu047ec3bf9fd1dffb2a812390a3b16493_9376_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="259"
+data-flex-basis="622px"
+>&lt;/p>
+&lt;p>Então, na próxima postagem dessa série de estudos (minha revisão) sobre circuitos elétricos iremos adentrar nas Leis de Kirchhoff e já conseguiremos realizar algumas análises de circuitos.&lt;/p>
+&lt;blockquote>
+&lt;p>Materias de base: Análise básica de Circuitos para Engenharia - IRWIN 10° edição; Fundamentos Circuitos Elétricos - SADIKU.&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
