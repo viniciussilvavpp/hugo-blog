@@ -21,7 +21,7 @@ local = false
 src = "https://d17lbu6bbzbdc8.cloudfront.net/wp-content/uploads/2020/05/10214423/midnight_gospel_xlg-1-150x150.jpg"
 
 [article]
-math = false
+math = true
 readingTime = true
 
 [article.license]
