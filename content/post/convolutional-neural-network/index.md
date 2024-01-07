@@ -3,7 +3,7 @@ title: O que é uma Rede Neural Convolucional (CNN)
 description: Uma rede neural convolucional é um tipo de rede neural artificial que utiliza filtros para extrair características locais de imagens. As CNNs são utilizadas principalmente em...
 slug: rede-neural-convolucional
 date: 2024-01-06 18:02:00+0000
-image: camadas_an-gif.gif
+image: CNN.jpg
 categories:
     - Redes Neurais
 tags:
