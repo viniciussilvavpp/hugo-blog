@@ -9,6 +9,10 @@ categories:
 tags:
     - programacao
     - javascript
+
+style:
+    background: "#0077b6"
+    color: "#fff"
 ---
 
 
